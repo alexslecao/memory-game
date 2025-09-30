@@ -1,0 +1,25 @@
+.app {
+    max-width: 800px;
+    min-width: 350px;
+    margin: auto;
+    padding: 1rem; 
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.back-button {
+    padding: .5rem 1rem;
+    background-color: #5687b5;
+    color: #fff;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.back-button:hover {
+    background-color: #5687b5;
+}

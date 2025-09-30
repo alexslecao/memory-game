@@ -1,70 +1,69 @@
-# React + TypeScript + Vite
+# Jogo da Memória com React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um clássico jogo da memória construído do zero com tecnologias modernas de front-end. Este projeto foi criado como um exercício de estudo para praticar conceitos de React, TypeScript e CSS responsivo, desde a configuração inicial do ambiente até o deploy final.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Jogabilidade Clássica:** Encontre todos os pares de cartas para vencer.
+- **Níveis de Dificuldade:** Tela inicial para escolher entre 4 dificuldades, que alteram o tamanho do tabuleiro:
+    - Iniciante (4x4)
+    - Fácil (4x5)
+    - Médio (5x6)
+    - Difícil (6x6)
+- **Contador de Jogadas:** Monitore seus movimentos e o número de pares encontrados.
+- **Layout Responsivo:** O design se adapta perfeitamente a qualquer tamanho de tela, de celulares a desktops, sem barras de rolagem.
+- **Mensagem de Vitória:** Uma saudação amigável ao completar o desafio.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tecnologias Utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Este projeto foi construído com as seguintes ferramentas:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* **[Vite](https://vitejs.dev/):** Um ambiente de desenvolvimento front-end extremamente rápido e moderno.
+* **[React](https://react.dev/):** Biblioteca para construir a interface de usuário.
+* **[TypeScript](https://www.typescriptlang.org/):** Superset do JavaScript que adiciona tipagem estática, aumentando a qualidade e a manutenção do código.
+* **CSS Moderno:** Uso de Flexbox e CSS Grid para criar layouts complexos e responsivos.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Rodando o Projeto Localmente
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-"# memory-game" 
+Para executar este projeto em sua máquina, siga os passos abaixo.
+
+### Pré-requisitos
+
+Você precisa ter o [Node.js](https://nodejs.org/) (versão LTS recomendada) instalado.
+
+### Passos
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/memory-game.git](https://github.com/alexslecao/memory-game.git)
+    ```
+    *Substitua `seu-usuario/memory-game.git` pelo URL do seu repositório.*
+
+2.  **Navegue até a pasta do projeto:**
+    ```bash
+    cd memory-game
+    ```
+
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+
+4.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+
+5.  Abra seu navegador e acesse `http://localhost:5173` (ou a porta indicada no seu terminal) para ver o jogo funcionando.
+
+---
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
